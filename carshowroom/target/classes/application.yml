@@ -1,0 +1,7 @@
+server:
+  port: 8088
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://sudheer:manager@sudheerreact.8229ijp.mongodb.net/?retryWrites=true&w=majority    
+      database: NewDb
