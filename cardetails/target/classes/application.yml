@@ -5,3 +5,14 @@ spring:
     mongodb:
       uri: mongodb+srv://sudheer:manager@sudheerreact.8229ijp.mongodb.net/?retryWrites=true&w=majority    
       database: NewDb
+logging:
+  Level:
+    com.car.cardetails: INFO
+  file:
+    name: src/main/resources/logs/details-logs.log
+  logback:
+    rollingpolicy:
+      file-name-pattern: cardetails-%d{yyyy-MM-dd}.%i.log 
+      max-file-size: 1MB 
+      total-size-cap: 1GB 
+      max-history: 30
