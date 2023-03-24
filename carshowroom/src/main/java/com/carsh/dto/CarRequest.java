@@ -23,4 +23,11 @@ public class CarRequest {
 	public void setcPrice(double cPrice) {
 		this.cPrice = cPrice;
 	}
+	@Override
+	public String toString() {
+		return "CarRequest [cType=" + cType + ", cPrice=" + cPrice + "]";
+	}
+
+	
+	
 }

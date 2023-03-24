@@ -1,7 +1,18 @@
 server:
-  port: 8088
+  port: 8086
 spring:
   data:
     mongodb:
       uri: mongodb+srv://sudheer:manager@sudheerreact.8229ijp.mongodb.net/?retryWrites=true&w=majority    
       database: NewDb
+logging:
+  Level:
+    com.carsh.carshowroom: INFO
+  file:
+    name: src/main/resources/logs/carshowroom-logs.log
+  logback:
+    rollingpolicy:
+      file-name-pattern: carshowroomi-%d{yyyy-MM-dd}.%i.log 
+      max-file-size: 2MB 
+      total-size-cap: 1GB 
+      max-history: 30
